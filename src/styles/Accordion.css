@@ -1,0 +1,137 @@
+
+.ui.accordion .active.content {
+    display: block;
+  }
+  
+  .ui.accordion .content {
+    display: none;
+    padding: 0.5rem 1rem;
+  }
+  
+.accordion .title {
+  height: 48px;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    user-select: none;
+  }
+  
+  .ui.accordion .title.active {
+    background: #f0f0f0;
+  }
+
+  /* Accordion.css */
+.accordion .accordion-item {
+  border: 0;
+  border-radius: 0!important;
+  line-height: 24px;
+  margin: 16px 0;
+  color: #282828;
+}
+.count-wrap button.download{
+  width: 130px;
+  padding: 8px 18px;
+  margin-left: 0;
+}
+button.download {
+  width: 120px;
+  border-radius: 4px;
+  padding: 4px 16px;
+  border: 1px solid #A6A7AA;
+  background: unset;
+  font-size: 12px;
+  margin-left: 20px;
+}
+button.download img {
+  padding-top: 4px;
+  margin-right: 6px;
+}
+.accordion .title {
+  background: #F2F3F4;
+  box-shadow: 0px 2px 3px 1px #00000026;
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion .arrow {
+  margin-right: 10px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion .accordion-item.active .arrow {
+  transform: rotate(-135deg);
+}
+
+.accordion .content {
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.accordion .accordion-item.active .content {
+  max-height:100%; /* Adjust based on your content's needs */
+  padding: 10px 0;
+}
+.upload-container {
+  border: 2px dashed #ccc;
+  text-align: center;
+  height: 180px;
+  position: relative; /* For absolute positioning of the button */
+}
+.accordion-title{
+  background: #D8EAEF;
+  padding: 6px 10px;
+}
+.accordion .upload-button {
+  text-decoration: underline;
+  color: #686868;
+  font-size: 16px;
+  width: 300px;
+  background-color: white;
+  border: 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 38%; /* Half of the button's height to be outside the container */
+  left: 50%;
+  transform: translateX(-50%); /* Center the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between text and arrow */
+}
+.accordion .note{
+  text-align: right;
+  margin-right: 20px;
+  color: #B02C38;
+  font-size: 12px;
+}
+button.change-method {
+  font-size: 12px;
+  background-color: #f2f3f4;
+  border: 1px solid #a6a7aa;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #282828;
+}
+button.change-method:hover {
+  background-color: #e6e6e6; 
+}
+.w-100 {
+  width: 100%;
+}
+.accordion .accordion-item a{
+  color: #282828;
+  text-decoration: none;
+}

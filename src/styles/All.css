@@ -1,0 +1,408 @@
+.input-border-bottom{
+  border-bottom: 1px solid #D8D8D8 !important;
+}
+.text-right{
+  text-align: right;
+}
+.right-content .title {
+    font-size: 26px;
+    color: #282828;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.right-content .description {
+    background: #F2F3F4;
+    box-shadow: 0px 2px 3px 1px #00000026;
+    line-height: 24px;
+    padding: 12px 16px;
+    color: #282828; /* Adjust the color to match the description in your image */
+    margin-bottom: 16px;
+}
+
+.right-content .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #a6a7aa;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.right-content .search-container input[type="text"]{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-right: 8px;
+    font-size: 14px;
+}
+.d-flex-product-list input.form-control{
+  font-size: 14px;
+}
+input::placeholder {
+  color: #A6A7AA;
+}
+.category-btn {
+    font-size: 12px;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f2f3f4; 
+    border: 1px solid #a6a7aa; /* Slightly darker border for definition */
+    border-radius: 4px;
+    padding: 8px 16px; 
+    color: #282828; 
+}
+
+.category-btn:hover {
+    background-color: #e6e6e6; 
+}
+
+.category-btn img {
+    margin-right: 8px; 
+    height: auto; 
+    width: 20px;
+}
+/* Style for the disabled button */
+.category-btn.disabled {
+  background-color: #F2F3F4;
+  color: #A6A7AA;
+  cursor: not-allowed;
+  border: 1px solid #A6A7AA;
+}
+.category-btn.disabled img {
+  opacity: 0.3;
+}
+/* Additional hover style for the enabled button to indicate it's clickable */
+.category-btn:not(.disabled):hover {
+  background-color: #e6e6e6; 
+}
+.category-list-title{
+  background-color: #F2F3F4;
+  padding: 10px;
+}
+.right-content .search-btn {
+    width: 140px;
+    padding: 8px 28px;
+    color: #fff;
+    background: #5EB1CC;
+    border-radius: 4px;
+    outline: unset;
+    border: unset;
+}
+
+.list-item {
+    padding: 2px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.list-item li {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 9px;
+    list-style-type: none;
+    padding-left: 8px;
+}
+.list-item li input{ 
+    margin-right: 8px;
+}
+.list-item li.more a{
+    color:#282828;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Create a custom box */
+  .custom-checkbox-label:before {
+    border-radius: 4px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #444444;
+    margin-right: 8px;
+    cursor: pointer;
+
+  }
+  .custom-checkbox-label-confirm:before {
+    border-radius: 4px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #444444;
+    margin-right: 4px;
+    cursor: pointer;
+
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background: url('../assets/checkbox.svg') no-repeat center center;
+    background-color: #B02C38;
+    border: 1px solid #9B2634;
+    background-size: contain;
+    border: none; 
+  }
+  
+  /* Style the label text */
+  .custom-checkbox-label-confirm {
+    margin-left: 14px;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  
+  .list-item li, .count-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .list-item li button, .count-wrap button {
+    margin-left: auto; 
+  }
+
+  button.delete {
+    background: unset;
+    color: #5EB1CC;
+    border: 0;
+}
+
+button.clear {
+    color: #282828;
+    background: #F2F3F4;
+    width: 120px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0;
+}
+.right-content .count{
+    font-weight: 500;
+    color: #9B2634;
+}
+
+.selected-list {
+    border: 2px solid #5EB1CC;
+    border-radius: 4px;
+    padding: 10px 20px 10px 20px;
+}
+.selected-list .list-item li {
+    color: #686868;
+}
+.count-wrap p{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.pagination {
+    border-bottom: 1px solid #D8D8D8;
+    padding-bottom: 18px;
+    display: flex; 
+    justify-content: center; 
+    list-style-type: none; 
+  }
+  
+  .pagination a {
+    border-radius: 4px;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd; 
+    margin: 0 4px; 
+  }
+  
+  .pagination a.active {
+    background-color: #B02C38; 
+    color: white;
+    border: 1px solid #B02C38; 
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: #ddd; 
+  }
+ 
+  .pagination a:first-child, .pagination a:last-child {
+    border-radius: 5px; 
+  }
+  .nickname {
+    margin-left: 14px;
+    color: #A6A7AA;
+}
+.CAS {
+  width: 180px;
+  display: inline-block;
+  text-align: left;
+}
+.correction-number {
+  width: 380px;
+  display: inline-block;
+  text-align: left;
+}
+.red{
+  color: #9B2634;
+}
+.blue{
+  color: #5EB1CC;
+}
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.prodcut-chosen{
+  font-size: 12px;
+  margin-right: 10px;
+}
+.red{
+  color: #B02C38;
+}
+.all-select{
+  font-size: 12px;
+}
+.all-select .custom-checkbox-label:before{
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+}
+button.top-delete{
+  background: unset;
+  border: 0;
+}
+.top-delete{
+  font-size: 12px;
+  margin-left: 10px;
+}
+.top-delete img{
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+button.add-product{
+  background: unset;
+  color: #686868;
+  border: 0;
+}
+button.ok-wrap{
+  border-radius: 18px;
+  background: #5EB1CC;
+  border: none;
+  margin-left: 5px;
+  padding: 0 20px;
+}
+button.ok-wrap img{
+  margin-top: 3px!important;
+}
+.all-select {
+  display: flex;
+  align-items: center;
+}
+
+.all-select .custom-checkbox-input {
+  margin-right: 10px;
+}
+
+.all-select .custom-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex-product-list {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D8D8D8;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+.all-select.first {
+  flex-grow: 1; 
+}
+
+.all-select.first img{
+margin-top: 4px;
+ margin-left: 4px;
+}
+
+.d-flex-product-list .input-group-text{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 12px;
+}
+.d-flex-product-list .form-control{
+  padding:  0 5px;
+}
+.product-list-right {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px; 
+}
+
+.product-list-right .input-group{
+  height: 32px;
+  width: 100px;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.add-product img{
+  padding-top: 5px;
+  margin-right: 10px;
+}
+.product-chosen {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.x-line{
+  justify-content: space-between; 
+  align-items: center; 
+}
+ul.dropdown_wrap {
+  text-align: center;
+  padding:0;
+  width: 100%;
+  border: 1px solid #444444;
+  background: #fff;
+  font-size: 12px;
+  position: absolute;
+  border-radius: 4px;
+  margin-top: 5px;
+
+}
+ul.dropdown_wrap li{
+  padding-top:1px;
+  padding-bottom:1px;
+  list-style: none;
+}
+ul.dropdown_wrap li:hover{
+  background-color: #D8D8D8;
+}

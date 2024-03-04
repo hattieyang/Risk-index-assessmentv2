@@ -1,0 +1,44 @@
+.bubble-box img {
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+  }
+  
+  .bubble-box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bubble-box:hover .bubble-content {
+    display: block;
+  }
+  
+  .bubble-box .bubble-content {
+    text-align: center;
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 50%; /* adjusted from 52% to 50% to align with transform */
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 10px;
+    background-color: #3e3e3e;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .bubble-box .bubble-content::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%; /* adjusted from 52% to 50% to align with transform */
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent #3e3e3e transparent;
+    transform: translateX(-50%);
+  }
+  
